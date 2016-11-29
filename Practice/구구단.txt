@@ -1,0 +1,14 @@
+//201312053
+//강동호
+#include <stdio.h>
+int main(void)
+{
+	int dan,gop;
+ for(gop=1;gop<=9;gop++){ //곱 1~9까지 반복
+	  for(dan=2;dan<=9;dan++){  //단2~9까지 반복
+		printf("%dx%d=%2d │",dan,gop,gop*dan); //구구단출력
+	  }
+	 printf("\n");
+    }
+	return 0;
+}

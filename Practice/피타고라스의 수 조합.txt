@@ -1,0 +1,26 @@
+//201312053
+//강동호
+#include <stdio.h>
+#define MAX 2000 //숫자몇까지나타나게할건지
+int main(void)
+{
+	int i,j,k,num, count=1;
+
+    printf("직각삼각형의 밑변, 높이, 빗변을 X, Y, Z로 할 때,\n");
+	printf("X²+Y²=Z²을 만족하는 자연수를 피타고라스 수라고 합니다.\n");
+	printf("자연수 어디까지 피타고라스수 조합을 얻고 싶습니까==");  
+	scanf("%d",&num);
+
+	  for(i=1;i<=MAX;i++){
+		for(j=i;j<=MAX;j++){
+			for(k=j;k<=MAX;k++){
+				if(k*k==(i*i+j*j)) {
+					if(count>num)break; //입력값에도달하면중단
+					printf("%3d: %3d %3d %3d\n",count,i,j,k);
+				    count++;
+				}
+			}
+		}
+	}
+ 	return 0;
+}

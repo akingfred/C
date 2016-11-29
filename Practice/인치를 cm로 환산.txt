@@ -1,0 +1,17 @@
+//201312053
+//강동호
+#include <stdio.h>
+int main(void)
+{
+	double a;
+
+	printf("┏━━━━━━━━━━━━━━━━━━┓");
+	printf("\n┃Inch를 cm로 환산해주는 프로그램.    ┃\n");
+	printf("┗━━━━━━━━━━━━━━━━━━┛\n");
+	printf("인치값을 입력해주세요=");
+	scanf("%lf",&a); //a값을 입력받음
+	printf("%lfInch는 %lfcm입니다.",a,(a*(2.54)));//결과값을 출력
+
+	
+    return 0;
+}

@@ -1,0 +1,33 @@
+//201312053
+//강동호
+#include <stdio.h>
+int main(void)
+{
+	char op;
+	int num1, num2;
+	do{    
+	printf("곱셈과 나눗셈만 가능합니다\n");
+        printf("끝내려면 0+0을 입력하세요\n");
+	printf("계산하려는 수식(예:10x20,10/20)을 입력하세요:");
+	scanf("%d%c%d",&num1,&op,&num2);  //값을 입력받음
+        if(num1==0 && num2==0) break; //0일때 종료
+	switch(op){ //연산자에따라 계산
+	case '/' : 
+		printf("나눗셈 결과는 %lf입니다.\n",(double)num1/num2);
+		break;
+	case '*' : 
+		printf("곱셈 결과는 %d입니다.\n",num1*num2);
+		break;
+    case '+' : 
+		printf("덧셈 결과는 %d입니다.\n",num1+num2);
+		break;
+	case '-' : 
+		printf("뺄셈 결과는 %d입니다.\n",num1-num2);
+		break;
+	default  : 
+			printf("다시 입력하세요\n");
+		    break;
+	}
+	}while(1);
+	return 0;
+}

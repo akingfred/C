@@ -1,0 +1,15 @@
+//201312053
+//강동호
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{   int i,a;
+    srand(time(NULL));
+	for(i=0;i<100;i++){
+		printf("%d\t",rand()%6+1); //난수발생
+		//if((i%6)==0){srand(7);)  //쓰는 용도 모르겠음
+	
+	}
+	return 0;
+}
+  

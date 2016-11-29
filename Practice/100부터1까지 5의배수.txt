@@ -1,0 +1,14 @@
+//201312053
+//강동호
+#include <stdio.h>
+int main(void)
+{	
+	int n,a,b;
+
+    for(n=100;n>0;n--){  //100~1까지
+		a=n/5;
+			b=n-a*5; //나머지구함
+			if(b==0) printf("%d ",n);//나머지0일시출력
+	}
+	return 0;
+}

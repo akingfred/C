@@ -1,0 +1,18 @@
+//201312053
+//강동호
+#include<stdio.h>
+int print();
+double sum=1;  //썸변수 초기화
+int main()
+{
+	int x;
+    print(1);  //함수호출
+	
+ return 0;
+}
+int print(int a){  //int함수 정의
+	sum = sum*a;
+	printf("%d! = %g\t",a,sum);
+	if(a>=10)return(10);  //a가10이상이면 리턴10
+	return(print(a+1));  //아닐시 함수재호출
+}

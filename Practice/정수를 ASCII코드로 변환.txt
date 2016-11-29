@@ -1,0 +1,14 @@
+//201312053
+//강동호
+#include <stdio.h>
+int main(void)
+{
+ int i;
+while(1){	//무한루프
+ printf("ASCII코드값을 알아볼 정수를 입력하세요(128을 입력하면 중단)");
+	scanf("%d",&i);   //정수값을 입력받음
+	if(i==128)break; //128을 입력받을 경우 중단
+	printf("%d=%c\n",i,i);	//ASCII값을 출력
+}
+		return 0;
+}

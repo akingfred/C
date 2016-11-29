@@ -1,0 +1,31 @@
+//201312053
+//강동호
+예제 6.5 우선순위
+(year%4==0) && (year%100!=0) ) || (year%400==0) 
+(),%,== !=,&&,ll
+
+#include <stdio.h> //헤더파일을 가져와서 프린트,스캔 함수를 선언안하고 쓸 수 있음
+int main(void)
+{
+	int  kor,eng,mat, total, max,max1;  //정수변수 선언
+	double avg;  //더블형변수 선언
+
+	printf("┏━━━━━━━━━━━━━━━━━━┓");
+	printf("\n┃총점과 평균을 구하는 프로그램입니다.┃\n");
+	printf("┗━━━━━━━━━━━━━━━━━━┛\n");
+	printf("국어 점수를 입력하고 Enter를 누르세요="); 
+	scanf("%d",&kor);                                      //국어점수 입력받음
+	printf("\n영어 점수를 입력하고 Enter를 누르세요=");
+	scanf("%d",&eng);                                      //영어점수 입력받음
+	printf("\n수학 점수를 입력하고 Enter를 누르세요=");
+	scanf("%d",&mat);                                      //수학점수 입력받음
+
+	max=(kor>eng) ? kor : eng ; //국어와 영어점수 비교
+	max1=(max>mat) ? max : mat; //위에서 비교한 것을 수학점수와 비교
+	total=kor+eng+mat; //점수 합산
+	avg=total/3.0; //평균 점수
+
+
+	printf("당신의 총점은 %d이고, 평균은 %f이고, 최고점수는%d .\n",total, avg, max1); //합산 평균 최고점수 출력
+    return 0;
+}

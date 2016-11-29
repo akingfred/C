@@ -1,0 +1,13 @@
+//201312053
+//강동호
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	double a=3.5;
+	int b,c;
+	b=ceil(a); //올림
+	c=floor(a); //내림
+	printf("%d %d",b,c);
+	return 0;
+}

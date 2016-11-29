@@ -1,0 +1,14 @@
+//201312053
+//강동호
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	double a=3.5;
+	double b,c,d;
+	b=cos(60*3.141592/180); //cos60은 1/2
+	c=sin(30*3.141592/180); //sin30은 1/2
+	d=tan(45*3.141592/180); //tan45는 1
+	printf("%5.2f %5.2f %5.2f",b,c,d);
+	return 0;
+}

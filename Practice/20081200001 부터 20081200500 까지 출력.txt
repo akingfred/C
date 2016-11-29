@@ -1,0 +1,12 @@
+//201312053
+//강동호
+#include <stdio.h>
+int main()
+{
+	int n,sum=0;
+	for(n=1;n<=500;n++){  //1~500까지
+		printf("20081200%03d\t",n);	
+	}
+	
+	return 0;
+}

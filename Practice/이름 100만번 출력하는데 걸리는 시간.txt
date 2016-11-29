@@ -1,0 +1,20 @@
+//201312053
+//강동호
+#include<stdio.h>
+#include<time.h>
+#define MAXIMUM 1000000 //몇번출력할것인가?
+int main()
+{   int i,a;
+    double during;
+    clock_t start, end;//시간변수선언
+	start = clock(); //카운트시작
+    for(i=0;i<MAXIMUM;i++){
+		printf("강동호");
+	}
+	end = clock(); //마지막시간
+	during=(end - start) / CLOCKS_PER_SEC;
+	printf("%f\n",during);
+	
+	return 0;
+}
+  

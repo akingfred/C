@@ -1,0 +1,10 @@
+//201312053
+//강동호
+#include <stdio.h>
+int main(void)
+{
+	int i=-2,absolute;
+	absolute= (i<0) ? -i :  i;  //절대값으로 바꾸어줌
+	printf("%d\n",absolute);  //2
+	return 0;
+}

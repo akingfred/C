@@ -1,0 +1,28 @@
+//201312053
+//강동호
+#include <stdio.h> 
+int main(void) 
+{ 
+	double weight, height,bmi; 
+	printf("신체질량지수(Body Mass Index:BMI)에 의한 비만도 \n"); 
+	printf("계산법으로 비만도를 측정해주는 프로그램입니다.\n"); 
+	printf("이 지수가 30 이상 고도비만, 25~29.9 비만, 23~24.9 과체중,\n");
+	printf("18.6∼22.9 정상, 18.5 이하 저체중으로 판정됩니다.\n"); 
+
+	printf("체중을 입력하세요(kg)="); 
+	scanf("%lf",&weight); 
+	printf("키를 입력하세요(cm)="); 
+	scanf("%lf",&height);
+	height=height/100.0;    //키를 m단위로 환산
+	printf("%lf",height);
+	bmi=weight/(height*height);
+
+	printf("당신의 BMI는 %f입니다.\n",bmi);
+	if(bmi>=30) printf("오 테러블~~고도비만입니다.\n"); 
+    else if( bmi>=25.0 && bmi<30.0 ) printf("오 노우~~비만입니다.\n"); 
+	else if( bmi>=23.0 && bmi<25.0 ) printf("웁스~~과체중입니다.\n"); 
+	else if( bmi>=18.6 && bmi<23.0 ) printf("착한 몸매~~정상입니다.\n"); 
+    else if( bmi<18.6 ) printf("야참이 필요한 당신~~저체중입니다.\n"); 
+	
+  	return 0;
+}
